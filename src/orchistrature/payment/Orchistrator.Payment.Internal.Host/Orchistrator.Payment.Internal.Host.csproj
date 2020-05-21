@@ -1,0 +1,74 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+		<PreserveCompilationContext>true</PreserveCompilationContext>
+		<AssemblyName>Restourant.Manager.Web.Host</AssemblyName>
+		<OutputType>Exe</OutputType>
+		<PackageId>Restourant.Manager.Web.Host</PackageId>
+		<UserSecretsId>Restourant-Manager-56C2EF2F-ABD6-4EFC-AAF2-2E81C34E8FB1</UserSecretsId>
+		<AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+		<GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+		<LangVersion>7.2</LangVersion>
+	</PropertyGroup>
+	<ItemGroup>
+		<Content Remove="wwwroot\swagger\ui\index.html" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="app.config" />
+		<None Update="Dockerfile">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="log4net.config">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+		</None>
+		<None Update="wwwroot\**\*">
+			<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+		</None>
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="2.2.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.4" Condition="'$(Configuration)' == 'Debug'" />
+		<PackageReference Include="Microsoft.Extensions.Caching.SqlServer" Version="3.1.4" />
+		<PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="3.1.4" />
+
+		<PackageReference Include="Serilog.AspNetCore" Version="3.2.0" />
+		<PackageReference Include="Serilog.Extensions.Logging" Version="3.0.1" />
+		<PackageReference Include="Serilog.Extensions.Logging.File" Version="2.0.0" />
+		<PackageReference Include="Serilog.Settings.Configuration" Version="3.1.0" />
+		<PackageReference Include="Serilog.Sinks.ApplicationInsights" Version="3.1.0" />
+		<PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
+		<PackageReference Include="Serilog.Sinks.File" Version="4.1.0" />
+		<PackageReference Include="App.Metrics.AspNetCore" Version="3.2.0" />
+		<PackageReference Include="App.Metrics.AspNetCore.Endpoints" Version="3.2.0" />
+		<PackageReference Include="App.Metrics.AspNetCore.Health" Version="3.2.0" />
+		<PackageReference Include="App.Metrics.AspNetCore.Health.Endpoints" Version="3.2.0" />
+		<PackageReference Include="App.Metrics.AspNetCore.Hosting" Version="3.2.0" />
+		<PackageReference Include="App.Metrics.AspNetCore.Mvc" Version="3.2.0" />
+		<PackageReference Include="App.Metrics.AspNetCore.Reporting" Version="3.2.0" />
+		<PackageReference Include="App.Metrics.AspNetCore.Tracking" Version="3.2.0" />
+		<PackageReference Include="App.Metrics.Health.Checks.Http" Version="3.2.0" />
+		<PackageReference Include="App.Metrics.Health.Checks.Network" Version="3.2.0" />
+		<PackageReference Include="App.Metrics.Health.Checks.Process" Version="3.2.0" />
+		<PackageReference Include="App.Metrics.Reporting.Console" Version="3.2.0" />
+		<PackageReference Include="App.Metrics.Reporting.InfluxDB" Version="3.2.0" />
+		<PackageReference Include="Abp.Castle.Log4Net" Version="5.4.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Include="wwwroot\swagger\ui\index.html">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</EmbeddedResource>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\..\Restourant.Manager.Web.Core\Restourant.Manager.Web.Core.csproj" />
+	  <ProjectReference Include="..\Orchistrator.Payment.Internal.Service\Orchistrator.Payment.Internal.Service.csproj" />
+	</ItemGroup>
+
+</Project>

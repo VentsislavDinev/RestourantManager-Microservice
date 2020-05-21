@@ -1,0 +1,39 @@
+DEBUG 2020-05-18 16:08:53,697 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-05-18 16:08:58,845 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2020-05-18 16:08:59,311 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Service.Invoice.Host.Startup.IntuitWebHostModule, Restourant.Manager.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-18 16:08:59,352 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Restourant.Manager.ManagerWebCoreModule, Restourant.Manager.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-18 16:08:59,362 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Restourant.Manager.ManagerApplicationModule, Restourant.Manager.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-18 16:08:59,373 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Restourant.Manager.ManagerCoreModule, Restourant.Manager.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-18 16:08:59,377 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-18 16:08:59,380 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-18 16:08:59,384 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-18 16:08:59,389 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-18 16:08:59,396 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Restourant.Manager.EntityFrameworkCore.ManagerEntityFrameworkModule, Restourant.Manager.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-18 16:08:59,411 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-18 16:08:59,414 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-18 16:08:59,417 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-18 16:08:59,421 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-18 16:08:59,431 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-18 16:08:59,439 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-18 16:08:59,482 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2020-05-18 16:09:02,662 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-05-18 16:09:02,667 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-05-18 16:09:02,668 [1    ] o.Configuration.LanguageManagementConfig - Converted Manager (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-05-18 16:09:02,668 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-05-18 16:09:10,492 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: Restourant.Manager.EntityFrameworkCore.ManagerDbContext, Restourant.Manager.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-18 16:09:25,049 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-05-18 16:09:25,876 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-05-18 16:09:26,937 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-05-18 16:09:27,328 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Manager
+DEBUG 2020-05-18 16:09:28,114 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-05-18 16:09:30,844 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-05-18 16:09:32,540 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[Restourant.Manager.MultiTenancy.Tenant, Restourant.Manager.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Restourant.Manager.Authorization.Users.User, Restourant.Manager.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2020-05-18 16:09:33,422 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 8 classes define auto mapping attributes
+DEBUG 2020-05-18 16:09:33,423 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Restourant.Manager.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2020-05-18 16:09:33,488 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Restourant.Manager.Users.Dto.CreateUserDto
+DEBUG 2020-05-18 16:09:33,496 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Restourant.Manager.Users.Dto.UserDto
+DEBUG 2020-05-18 16:09:33,500 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Restourant.Manager.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-05-18 16:09:33,502 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Restourant.Manager.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-05-18 16:09:33,503 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Restourant.Manager.Roles.Dto.PermissionDto
+DEBUG 2020-05-18 16:09:33,504 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Restourant.Manager.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-05-18 16:09:33,505 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Restourant.Manager.MultiTenancy.Dto.TenantDto

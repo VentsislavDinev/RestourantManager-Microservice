@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Abp" Version="5.7.0" />
+    <PackageReference Include="Abp.Zero.Common" Version="5.7.0" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\domain\invoice\Domain.Invoice.Model\Domain.Invoice.Model.csproj" />
+    <ProjectReference Include="..\Service.Invoice.Model\Service.Invoice.Model.csproj" />
+  </ItemGroup>
+
+</Project>

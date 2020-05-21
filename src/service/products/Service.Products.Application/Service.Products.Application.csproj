@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\domain\products\Domain.Products.Abstract\Domain.Products.Abstract.csproj" />
+    <ProjectReference Include="..\..\..\domain\products\Domain.Products.Model\Domain.Products.Model.csproj" />
+    <ProjectReference Include="..\Service.Products.Model\Service.Products.Model.csproj" />
+  </ItemGroup>
+
+</Project>

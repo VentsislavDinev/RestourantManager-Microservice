@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\domain\products\Domain.Products.Abstract\Domain.Products.Abstract.csproj" />
+    <ProjectReference Include="..\..\..\domain\products\Domain.Products.Model\Domain.Products.Model.csproj" />
+  </ItemGroup>
+
+</Project>
