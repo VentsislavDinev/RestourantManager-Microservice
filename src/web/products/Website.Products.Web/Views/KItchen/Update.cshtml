@@ -1,7 +1,50 @@
-﻿
+﻿@model WiLSoft.Automation.RestourantManager.Module.KitchenViewModel
+
 @{
     ViewData["Title"] = "Update";
 }
+<div class="br-mainpanel">
+    <div class="br-pagebody">
+        <div class="br-section-wrapper">
 
-<h1>Update</h1>
+            <div class="row mg-t-80">
+                <div class="col-xl-6">
+                    <div class="form-layout form-layout-4">
+                        <form method="post">
 
+                            <div class="row">
+                                <label class="col-sm-4 form-control-label">Title: <span class="tx-danger">*</span></label>
+                                <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                                    <input type="text" class="form-control" value="@Model.Title"  asp-for="Title">
+
+                                    <span asp-validation-for="Title" class="text-danger"></span>
+                                </div>
+                            </div><!-- row -->
+                            <div class="row">
+                                <label class="col-sm-4 form-control-label">Image: <span class="tx-danger">*</span></label>
+                                <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                                    <input type="file" class="form-control" value="@Model.Image"  asp-for="Image">
+
+                                    <span asp-validation-for="Image" class="text-danger"></span>
+                                </div>
+                            </div><!-- row -->
+                            <div class="row mg-t-20">
+                                <label class="col-sm-4 form-control-label">Description: <span class="tx-danger">*</span></label>
+                                <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                                    <input type="text" class="form-control" value="@Model.Description" asp-for="Description">
+                                    <span asp-validation-for="Description" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-layout-footer mg-t-30">
+                                <button class="btn btn-info">Submit Form</button>
+                            </div><!-- form-layout-footer -->
+                        </form>
+                    </div><!-- form-layout -->
+
+                </div><!-- col-6 -->
+            </div>
+
+        </div>
+    </div>
+</div>

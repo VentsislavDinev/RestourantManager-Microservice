@@ -1,5 +1,28 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@model Abp.Application.Services.Dto.PagedResultDto<WiLSoft.Automation.RestourantManager.MenuViewModel>
+<!-- ########## START: MAIN PANEL ########## -->
+<div class="br-mainpanel br-profile-page">
+
+    <div class="bd bd-gray-300 rounded table-responsive">
+        <table class="table mg-b-0">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Items)
+                {
+                    <tr>
+                        <th scope="row"><a href="/product/getbyid/@item.Id"> @item.Title</a></th>
+                        <td><img src="@item.Image" /></td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div><!-- bd -->
+    <!-- ########## END: MAIN PANEL ########## -->
+</div>

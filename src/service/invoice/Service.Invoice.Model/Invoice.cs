@@ -4,6 +4,7 @@ using Abp.Organizations;
 
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace Service.Invoice.Model
@@ -32,11 +33,30 @@ namespace Service.Invoice.Model
         {
 
         }
+
+        [Required]
+        [StringLength(40, ErrorMessage = "The field is required", MinimumLength = 4)]
+        [DataType(DataType.Text)]
         public string CompanyName { get; set; }
+        [Required]
+        [StringLength(40, ErrorMessage = "The field is required", MinimumLength = 6)]
+        [DataType(DataType.Text)]
         public string Vat { get; set; }
+        [Required]
+        [StringLength(32, ErrorMessage = "The field is required", MinimumLength = 8)]
+        [DataType(DataType.Text)]
         public string Phone { get; set; }
+        [Required]
+        [StringLength(60, ErrorMessage = "The field is required", MinimumLength = 6)]
+        [DataType(DataType.Text)]
         public string AddressCompany { get; set; }
+        [Required]
+        [StringLength(40, ErrorMessage = "The field is required", MinimumLength = 4)]
+        [DataType(DataType.Text)]
         public string TotalPrice { get; set; }
+        [Required]
+        [StringLength(40, ErrorMessage = "The field is required", MinimumLength = 4)]
+        [DataType(DataType.Text)]
         public string Tax { get; set; }
         public int ProductId { get; set; }
         public long OrganizationUnitId { get; set; }

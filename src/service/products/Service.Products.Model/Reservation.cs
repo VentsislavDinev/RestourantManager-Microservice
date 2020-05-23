@@ -4,6 +4,7 @@ using Abp.Organizations;
 
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace Service.Products.Model
@@ -32,12 +33,24 @@ namespace Service.Products.Model
             OrganizationUnitId = organizationUnitId;
         }
 
+        [Required]
+        [StringLength(40, ErrorMessage = "The field is required", MinimumLength = 10)]
+        [DataType(DataType.MultilineText)]
         public string Title { get; set; }
+        [Required]
+        [StringLength(14, ErrorMessage = "The field is required", MinimumLength = 8)]
+        [DataType(DataType.PhoneNumber)]
+        [Phone]
         public string PhoneNumber { get; set; }
+        [Required]
+        [StringLength(8, ErrorMessage = "The field is required", MinimumLength = 1)]
         public string People { get; set; }
-
+        [Required]
         public string ReservationDate { get; set; }
 
+        [Required]
+        [StringLength(40, ErrorMessage = "The field is required", MinimumLength = 10)]
+        [DataType(DataType.MultilineText)]
         public string Description { get; set; }
         public DateTime CreationTime { get; set; }
         public long? CreatorUserId { get; set; }

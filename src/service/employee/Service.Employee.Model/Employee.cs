@@ -4,6 +4,7 @@ using Abp.Organizations;
 
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace Service.Employee.Model
@@ -31,8 +32,18 @@ namespace Service.Employee.Model
         {
 
         }
+
+        [Required]
+        [StringLength(40, ErrorMessage = "The field is required", MinimumLength = 4)]
+        [DataType(DataType.Text)]
         public string Name { get; set; }
+        [Required]
+        [StringLength(40, ErrorMessage = "The field is required", MinimumLength = 4)]
+        [DataType(DataType.Text)]
         public string LastName { get; set; }
+        [Required]
+        [StringLength(40, ErrorMessage = "The field is required", MinimumLength = 4)]
+        [DataType(DataType.Text)]
         public string PhoneNumber { get; set; }
         public string Address { get; set; }
         public string Email { get; set; }

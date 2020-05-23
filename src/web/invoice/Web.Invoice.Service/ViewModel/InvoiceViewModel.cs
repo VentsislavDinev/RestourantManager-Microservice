@@ -1,4 +1,5 @@
-﻿using Abp.Domain.Entities.Auditing;
+﻿using Abp.Application.Services.Dto;
+using Abp.Domain.Entities.Auditing;
 using Abp.Organizations;
 
 using System;
@@ -7,7 +8,7 @@ using System.Text;
 
 namespace Web.Invoice.Service.ViewModel
 {
-    public class InvoiceViewModel : IFullAudited, IMustHaveOrganizationUnit
+    public class InvoiceViewModel : EntityDto, IFullAudited, IMustHaveOrganizationUnit
     {
         public string CompanyName { get; set; }
         public string Vat { get; set; }

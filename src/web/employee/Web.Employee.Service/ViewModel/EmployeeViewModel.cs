@@ -1,4 +1,5 @@
-﻿using Abp.Domain.Entities;
+﻿using Abp.Application.Services.Dto;
+using Abp.Domain.Entities;
 using Abp.Domain.Entities.Auditing;
 using Abp.Organizations;
 
@@ -8,7 +9,7 @@ using System.Text;
 
 namespace Web.Employee.Service.ViewModel
 {
-    public class EmployeeViewModel : IFullAudited, ISoftDelete, IMustHaveOrganizationUnit
+    public class EmployeeViewModel : EntityDto, IFullAudited, ISoftDelete, IMustHaveOrganizationUnit
     {
         public string Name { get; set; }
         public string LastName { get; set; }

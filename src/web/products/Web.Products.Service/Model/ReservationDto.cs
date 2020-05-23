@@ -1,4 +1,5 @@
-﻿using Abp.Domain.Entities;
+﻿using Abp.Application.Services.Dto;
+using Abp.Domain.Entities;
 using Abp.Domain.Entities.Auditing;
 
 using System;
@@ -7,7 +8,7 @@ using System.Text;
 
 namespace WiLSoft.Automation.RestourantManager.Module
 {
-    public class ReservationViewModel : IFullAudited, ISoftDelete
+    public class ReservationViewModel : EntityDto,  IFullAudited, ISoftDelete
     {
         public string Title { get; set; }
         public string PhoneNumber { get; set; }

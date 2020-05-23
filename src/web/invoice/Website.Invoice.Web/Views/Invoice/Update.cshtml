@@ -1,7 +1,73 @@
-﻿
+﻿@model Web.Invoice.Service.ViewModel.InvoiceViewModel
 @{
     ViewData["Title"] = "Update";
 }
+}
 
-<h1>Update</h1>
+<div class="br-mainpanel">
+    <div class="br-pagebody">
+        <div class="br-section-wrapper">
 
+            <div class="row mg-t-80">
+                <div class="col-xl-6">
+                    <div class="form-layout form-layout-4">
+                        <form method="post">
+
+                            <div class="row">
+                                <label class="col-sm-4 form-control-label">Company name: <span class="tx-danger">*</span></label>
+                                <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                                    <input type="text" class="form-control" asp-for="CompanyName"value="@Model.CompanyName" placeholder="Enter firstname">
+
+                                    <span asp-validation-for="CompanyName" class="text-danger"></span>
+                                </div>
+                            </div><!-- row -->
+                            <div class="row">
+                                <label class="col-sm-4 form-control-label">Vat: <span class="tx-danger">*</span></label>
+                                <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                                    <input type="text" class="form-control" asp-for="Vat" value="@Model.Vat"  placeholder="Enter firstname">
+
+                                    <span asp-validation-for="Vat" class="text-danger"></span>
+                                </div>
+                            </div><!-- row -->
+                            <div class="row mg-t-20">
+                                <label class="col-sm-4 form-control-label">Phone: <span class="tx-danger">*</span></label>
+                                <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                                    <input type="text" class="form-control" asp-for="Phone" value="@Model.Phone" placeholder="Enter lastname">
+                                    <span asp-validation-for="Phone" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="row mg-t-20">
+                                <label class="col-sm-4 form-control-label">Address Company: <span class="tx-danger">*</span></label>
+                                <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                                    <input type="text" class="form-control" asp-for="AddressCompany" value="@Model.AddressCompany" placeholder="Enter email address">
+                                    <span asp-validation-for="AddressCompany" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="row mg-t-20">
+                                <label class="col-sm-4 form-control-label">TotalPrice: <span class="tx-danger">*</span></label>
+                                <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                                    <input type="text" class="form-control" asp-for="TotalPrice" value="@Model.TotalPrice" placeholder="Enter email address">
+                                    <span asp-validation-for="TotalPrice" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="row mg-t-20">
+                                <label class="col-sm-4 form-control-label">Tax: <span class="tx-danger">*</span></label>
+                                <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                                    <input type="text" class="form-control" asp-for="Tax" value="@Model.Tax" placeholder="Enter email address">
+                                    <span asp-validation-for="Tax" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-layout-footer mg-t-30">
+                                <button class="btn btn-info">Submit Form</button>
+                            </div><!-- form-layout-footer -->
+                        </form>
+                    </div><!-- form-layout -->
+
+                </div><!-- col-6 -->
+            </div>
+
+        </div>
+    </div>
+</div>

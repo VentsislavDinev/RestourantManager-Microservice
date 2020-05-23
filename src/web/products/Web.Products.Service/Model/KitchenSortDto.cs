@@ -1,4 +1,6 @@
 ﻿using Abp.Application.Services.Dto;
+using Abp.Domain.Entities.Auditing;
+using Abp.Organizations;
 
 using System;
 using System.Collections.Generic;
@@ -6,9 +8,7 @@ using System.Text;
 
 namespace WiLSoft.Automation.RestourantManager.Model
 {
-    public class KitchenSortViewModel : IPagedResultRequest
+    public class KitchenSortViewModel : EntityDto
     {
-        public int SkipCount { get; set; }
-        public int MaxResultCount { get; set; }
     }
 }

@@ -4,6 +4,7 @@ using Abp.Organizations;
 
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 
@@ -29,9 +30,19 @@ namespace Service.Products.Model
         {
 
         }
-        public string Title { get; set; }
-        public string Image { get; set; }
 
+        [Required]
+        [StringLength(40, ErrorMessage = "The field is required", MinimumLength = 10)]
+        [DataType(DataType.MultilineText)]
+        public string Title { get; set; }
+        [Required]
+        [StringLength(10000, ErrorMessage = "The field is required", MinimumLength = 7)]
+        [DataType(DataType.ImageUrl)]
+        [RegularExpression(@"^((http|ftp|https|www)://)?([\w+?\.\w+])+([a-zA-Z0-9\~\!\@\#\$\%\^\&\*\(\)_\-\=\+\\\/\?\.\:\;\'\,]*)?$")]
+        public string Image { get; set; }
+        [Required]
+        [StringLength(10000, ErrorMessage = "The field is required", MinimumLength = 10)]
+        [DataType(DataType.MultilineText)]
         public string Description { get; set; }
         public long? CreatorUserId { get; set; }
         public DateTime CreationTime { get; set; }

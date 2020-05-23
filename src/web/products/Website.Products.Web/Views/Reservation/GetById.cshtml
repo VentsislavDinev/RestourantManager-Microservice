@@ -1,0 +1,35 @@
+﻿@model WiLSoft.Automation.RestourantManager.Module.ReservationViewModel
+<!-- ########## START: MAIN PANEL ########## -->
+<div class="br-mainpanel br-profile-page">
+    <div class="card shadow-base bd-0 rounded-0 widget-4">
+        <div class="card-body">
+            <h4 class="tx-normal tx-roboto tx-white">@Model.Title @*@Model.Company*@ </h4>
+
+        </div><!-- card-body -->
+    </div><!-- card -->
+
+    <div class="tab-content br-profile-body">
+        <div class="tab-pane fade active show" id="posts">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="media-list bg-white rounded shadow-base">
+                        <div class="media pd-20 pd-xs-30">
+                            <div class="media-body mg-l-20">
+                                <div class="d-flex justify-content-between mg-b-10">
+
+                                    <p class="mg-b-20">@Model.PhoneNumber</p>
+                                    <p class="mg-b-20">@Model.People</p>
+                                    <p class="mg-b-20">@Model.ReservationDate</p>
+                                </div><!-- d-flex -->
+                                <p class="mg-b-20">@Model.Description</p>
+
+                            </div>
+                            <!-- med
+                            </div><!-- media -->
+                        </div><!-- col-lg-8 -->
+                    </div><!-- row -->
+                </div><!-- tab-pane -->
+            </div><!-- br-pagebody -->
+        </div>
+    </div>
+    <!-- ########## END: MAIN PANEL ########## -->
